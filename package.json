@@ -1,0 +1,32 @@
+{
+  "name": "path-routify",
+  "version": "0.1.0",
+  "description": "Generates expressjs compatible routes reflective of a given directory structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha '**/*.tests.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeulrich/path-routify.git"
+  },
+  "keywords": [
+    "express",
+    "routing"
+  ],
+  "author": "Luke Ulrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukeulrich/path-routify/issues"
+  },
+  "homepage": "https://github.com/lukeulrich/path-routify#readme",
+  "devDependencies": {
+    "bunyan": "1.x",
+    "chai": "3.x",
+    "express": "4.x",
+    "mocha": "2.x"
+  },
+  "dependencies": {
+    "inflection": "1.x"
+  }
+}
