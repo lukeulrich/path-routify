@@ -15,6 +15,6 @@ const PathRoutifier = require('./lib/PathRoutifier')
  */
 module.exports = function(app, routesPath, options = {}) {
 	let pathRoutifier = new PathRoutifier(app, options),
-		middlewares = pathRoutifier.loadMiddlewares(options.middlwaresPath)
+		middlewares = pathRoutifier.loadMiddlewares(options.middlewaresPath)
 	return pathRoutifier.routify(routesPath, middlewares)
 }
