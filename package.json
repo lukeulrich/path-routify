@@ -1,11 +1,11 @@
 {
   "name": "path-routify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates expressjs compatible routes reflective of a given directory structure",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint index.js 'lib/**/*.js'",
-    "test": "node_modules/.bin/mocha '**/*.tests.js'"
+    "test": "node_modules/.bin/mocha index.tests.js 'lib/**/*.tests.js'"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "express",
     "routing"
   ],
-  "author": "Luke Ulrich",
+  "author": "Luke Ulrich <lukeulrich@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lukeulrich/path-routify/issues"
