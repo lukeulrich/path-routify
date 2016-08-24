@@ -8,4 +8,4 @@ machine:
 test:
   post:
     - npm run coverage
-	- ln -s lcov-report/index.html $CIRCLE_ARTIFACTS/coverage.html
+    - ln -s lcov-report/index.html $CIRCLE_ARTIFACTS/coverage.html
