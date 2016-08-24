@@ -9,8 +9,8 @@ const PathRoutifier = require('./lib/PathRoutifier')
  *
  * @param {express} app
  * @param {String} routesPath root path to recursively transform into express compatible routes
- * @param {Object?} options defaults to an empty object; passed directly to PathRoutifier
- * @param {String?} options.middlewaresPath path to all application middlewares
+ * @param {Object} [options = {}] defaults to an empty object; passed directly to PathRoutifier
+ * @param {String} [options.middlewaresPath] path to all application middlewares
  * @returns {express.Router}
  */
 module.exports = function(app, routesPath, options = {}) {
