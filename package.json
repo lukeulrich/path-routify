@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint index.js 'lib/**/*.js'",
-    "test": "node_modules/.bin/mocha --reporter ${MOCHA_REPORTER-spec} index.tests.js 'lib/**/*.tests.js'"
+    "test": "node_modules/.bin/mocha --reporter ${MOCHA_REPORTER-spec} index.tests.js 'lib/**/*.tests.js'",
+    "coverage": "node_modules/.bin/istanbul cover --dir ${CIRCLE_ARTIFACTS-coverage} node_modules/mocha/bin/_mocha -- index.tests.js 'lib/**/*.tests.js'"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "bunyan": "1.x",
     "chai": "3.x",
     "express": "4.x",
+    "istanbul": "^0.4.5",
     "mocha": "2.x",
     "mocha-circleci-reporter": "0.0.2",
     "mocha-junit-reporter": "^1.12.0",
