@@ -1,6 +1,6 @@
 {
   "name": "path-routify",
-  "version": "0.1.3",
+  "version": "0.2.1",
   "description": "Generates expressjs compatible routes reflective of a given directory structure",
   "main": "index.js",
   "scripts": {
