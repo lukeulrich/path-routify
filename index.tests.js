@@ -4,10 +4,10 @@
 const path = require('path')
 
 // Vendor
-const bunyan = require('bunyan'),
-	expect = require('chai').expect,
-	express = require('express'),
-	request = require('supertest-as-promised')
+const bunyan = require('bunyan')
+const expect = require('chai').expect
+const express = require('express')
+const request = require('supertest')
 
 // Local
 const pathRoutify = require('./index')
