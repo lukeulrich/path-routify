@@ -1,12 +1,15 @@
 {
   "name": "path-routify",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Generates expressjs compatible routes reflective of a given directory structure",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint index.js 'lib/**/*.js'",
     "test": "node_modules/.bin/mocha --reporter ${MOCHA_REPORTER-spec} index.tests.js 'lib/**/*.tests.js'",
     "coverage": "node_modules/.bin/istanbul cover --dir ${CIRCLE_ARTIFACTS-coverage} node_modules/mocha/bin/_mocha -- index.tests.js 'lib/**/*.tests.js'"
+  },
+  "engines": {
+    "node": ">= 4.8.7"
   },
   "repository": {
     "type": "git",
